@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWeather App</title>
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="header"><strong>Welcome to myWeather App</strong></h1>
+    <!-- <form action="/" method="get" autocomplete="off"> -->
+    <input name="text " type="text" id="textbox" placeholder="Enter City Name">
+    <button id="btn" type="button" onclick="fetchWeather()"><strong>Search</strong></button>
+    <!-- </form> -->
+    <div id="databox">
+        <div id="numberwithcel">
+            28℃
+            <br>
+        </div>
+        <div id="location">
+            Mumbai
+            <br>
+        </div>
+        <div id="weatherInfo">
+            Sunny
+            <br>
+        </div>
+        <img id="pictorialrep" src="weather-icon" alt="weather Icon">
+            <!-- <i class="fa-solid fa-cloud"></i> -->
+            <!-- <i class="fa-solid fa-cloud-sun"></i> -->
+            <!-- <i class="fa-solid fa-cloud-moon"></i> -->
+            
+            <br>
+            <!-- <i class="fa-solid fa-cloud-rain"></i> -->
+            <!-- <i class="fa-solid fa-cloud-bolt"></i> -->
+            <!-- <i class="fa-solid fa-snowflake"></i> -->
+            <!-- <i class="fa-solid fa-cloud-showers-heavy"></i> -->
+        <div id="dayforecast">
+            <ul id="daything">
+                <li id="list">Morning</li>
+                <br>
+                <li id="list">Afternoon</li>
+                <br>
+                <li id="list">Evening</li>
+                <br>
+                <li id="list">Night</li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <script defer src="newtriggers.js"></script>
+    <script>
+    </script>
+</body>
+<footer>
+    Thank You!
+</footer>
+
+</html>

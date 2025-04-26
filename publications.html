@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M K Koushik Iyer | Publications</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <!-- Custom CSS - Same as previous page -->
+    <style>
+        /* Same CSS as the previous publications page artifact */
+        :root {
+            --primary-color: #bb86fc;
+            --secondary-color: #03dac6;
+            --background-dark: #121212;
+            --surface-dark: #1e1e1e;
+            --text-primary: rgba(255, 255, 255, 0.87);
+            --text-secondary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: var(--surface-dark);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: var(--text-primary);
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .card {
+            background-color: var(--surface-dark);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .publication-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-title {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .publication-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .publication-abstract {
+            margin-bottom: 15px;
+        }
+
+        .badge-custom {
+            background-color: rgba(187, 134, 252, 0.2);
+            color: var(--primary-color);
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: normal;
+        }
+
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: var(--background-dark);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--secondary-color);
+            color: var(--background-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-custom {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--primary-color);
+            color: var(--background-dark);
+        }
+
+        .tab-content {
+            padding: 30px 0;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-tabs .nav-link {
+            color: var(--text-secondary);
+            border: none;
+            padding: 10px 20px;
+            margin-right: 5px;
+        }
+
+        .nav-tabs .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-tabs .nav-link.active {
+            color: var(--primary-color);
+            background-color: transparent;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--surface-dark);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: var(--text-secondary);
+        }
+
+        .achor {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Page transition animations */
+        .page-content {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                text-align: center;
+            }
+
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">M K Koushik Iyer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Publications Page Content (continuing from previous artifact) -->
+    <div class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <p class="lead mb-4">
+                    My research contributions and academic publications in conferences
+                    and journals.
+                </p>
+
+                <!-- Publication Categories Tabs -->
+                <ul class="nav nav-tabs mb-4" id="publicationTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="journal-tab" data-bs-toggle="tab" data-bs-target="#journal"
+                            type="button" role="tab" aria-controls="journal" aria-selected="false">
+                            Journal
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="conference-tab" data-bs-toggle="tab" data-bs-target="#conference"
+                            type="button" role="tab" aria-controls="conference" aria-selected="false">
+                            Conference
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <!-- 'All' Tab Content already provided in previous artifact -->
+
+                <!-- Conference Publications Tab -->
+                <div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
+                    <!-- Conference Publication Item 1 -->
+                    <!-- <div class="publication-item">
+                            <h3 class="publication-title">Another Research Paper Title</h3>
+                            <p class="publication-authors">Your Name, Co-author Name</p>
+                            <p class="publication-meta">
+                                <strong>Conference:</strong> International Conference Name, Year<br>
+                                <strong>Pages:</strong> 123-135<br>
+                                <strong>DOI:</strong> 10.XXXX/XXXXX
+                            </p>
+                            <div class="publication-abstract">
+                                <h5>Abstract</h5>
+                                <p>
+                                    Abstract for your conference paper. Describe the problem addressed, methodology,
+                                    results, and implications. Focus on the key contributions and innovations presented
+                                    in your research.
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge badge-custom">Topic 1</span>
+                                <span class="badge badge-custom">Topic 4</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-custom me-2" target="_blank">View Publication</a>
+                                <a href="#" class="btn btn-outline-custom" target="_blank">Download PDF</a>
+                            </div>
+                        </div> -->
+
+                    <!-- Conference Publication Item 2 -->
+                    <div class="publication-item">
+                        <h3 class="publication-title">
+                            <a href="https://ieeexplore.ieee.org/document/10503160" class="achor"
+                                target="_blank">Automatic Tag Recommendation for Videos Encompassing
+                                Semantic Intelligence</a>
+                        </h3>
+                        <p class="publication-authors">
+                            Gerard Deepak,<a href="https://ieeexplore.ieee.org/author/127922470142392" target="_blank"
+                                class="anchor"><b> Koushik Iyer</b></a>, Samiksha Shukla
+                        </p>
+                        <p class="publication-meta">
+                            <strong>Conference:</strong> 2024 IEEE International
+                            Conference for Women in Innovation, Technology &
+                            Entrepreneurship (ICWITE), Bangalore, India, 2024<br />
+                            <strong>Pages:</strong> 1-6 <br />
+                            <strong>DOI:</strong> 10.1109/ICWITE59797.2024.10503160
+                        </p>
+                        <div class="publication-abstract">
+                            <h5>Abstract</h5>
+                            <p>
+                                The ATRSI framework is a semantic-oriented,
+                                AI-powered system for automatic Web video tagging in the era
+                                of Web 3.0. It uses TF-IDF, bag-of-words, and Lin similarity
+                                to build a semantic network, optimized with red deer
+                                optimization and classified using RNN. Semantic intelligence
+                                is enhanced through CoSim rank and Morisita’s overlap index,
+                                with lightweight graph embeddings for knowledge
+                                representation. ATRSI outperforms baseline models in
+                                accuracy, precision, and F-measure across recommendation
+                                tasks.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <span class="badge badge-custom">Intelligence</span>
+                            <span class="badge badge-custom">Tag Recommendation</span>
+                            <span class="badge badge-custom">Deep Learning</span>
+                            <span class="badge badge-custom">Similarity Measure</span>
+                            <span class="badge badge-custom">Recurrent Neural Network</span>
+                            <span class="badge badge-custom">Average Precision</span>
+                            <span class="badge badge-custom">Classification Datasets</span>
+                            <span class="badge badge-custom">Semantic Network</span>
+                            <span class="badge badge-custom">Red Deer</span>
+                            <span class="badge badge-custom">World Wide Web</span>
+                            <span class="badge badge-custom">Overlap Index</span>
+                            <span class="badge badge-custom">False Discovery Rate</span>
+                            <span class="badge badge-custom">Activation Function</span>
+                            <span class="badge badge-custom">Convolutional Neural Network</span>
+                            <span class="badge badge-custom">Sigmoid Function</span>
+                            <span class="badge badge-custom">Hidden Layer</span>
+                            <span class="badge badge-custom">Semantic Similarity</span>
+                            <span class="badge badge-custom">Web Crawler</span>
+                            <span class="badge badge-custom">Recommender Systems</span>
+                            <span class="badge badge-custom">Metaheuristic Optimization</span>
+
+
+                        </div>
+                        <div>
+                            <a href="https://ieeexplore.ieee.org/document/10503160" class="btn btn-custom me-2"
+                                target="_blank">View Publication</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025, M K Koushik Iyer</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mk-koushik-iyer/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MK-Koushik-Iyer" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://ieeexplore.ieee.org/author/127922470142392" target="_blank"><i
+                                class="fab fa-google"></i></a>
+                        <a href="mailto:mkkoushik2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Same JavaScript as previous pages
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentLocation = location.href;
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+
+            navLinks.forEach((link) => {
+                if (link.href === currentLocation) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+
+            // Simple page transition
+            const pageContent = document.querySelector(".page-content");
+            if (pageContent) {
+                pageContent.style.opacity = "0";
+                setTimeout(() => {
+                    pageContent.style.opacity = "1";
+                }, 50);
+            }
+        });
+    </script>
+</body>
+
+</html>

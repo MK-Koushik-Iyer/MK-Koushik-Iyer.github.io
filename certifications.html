@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M K Koushik Iyer | Certifications</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #BB86FC;
+            --secondary-color: #03DAC6;
+            --background-dark: #121212;
+            --surface-dark: #1E1E1E;
+            --text-primary: rgba(255, 255, 255, 0.87);
+            --text-secondary: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: var(--surface-dark);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: var(--text-primary);
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .card {
+            background-color: var(--surface-dark);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .cert-badge {
+            display: inline-block;
+            padding: 0.25em 0.5em;
+            font-size: 0.75em;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            background-color: var(--primary-color);
+            color: var(--background-dark);
+        }
+
+        .cert-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .cert-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .cert-title {
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .cert-issuer {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: var(--background-dark);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--secondary-color);
+            color: var(--background-dark);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            background-color: var(--surface-dark);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: var(--background-dark);
+            border-color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--surface-dark);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Page transition animations */
+        .page-content {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .section-title {
+                text-align: center;
+            }
+        }
+
+        .bright {
+
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">M K Koushik Iyer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="certifications.html">Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Certifications Page Content -->
+    <div class="page-content" id="certifications-page">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Certifications & Development</h2>
+                <p class="lead mb-4">Few Certifications that I have done to Upskill myself.</p>
+
+                <!-- Filter Buttons -->
+                <div class="mb-5">
+                    <button class="btn filter-btn active" data-filter="all">All</button>
+                    <button class="btn filter-btn" data-filter="cloud">Cloud Computing</button>
+                    <button class="btn filter-btn" data-filter="ai">Data Science</button>
+                    <!-- <button class="btn filter-btn" data-filter="dev">Software Development</button>
+                    <button class="btn filter-btn" data-filter="security">Cybersecurity</button> -->
+                </div>
+
+                <!-- Certifications Grid -->
+                <div class="row">
+                    <!-- Certification 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Alteryx Designer Core Certification</h5>
+                                <p class="cert-issuer">Alteryx</p>
+                                <p class="cert-date">Issued: March 2025 • Expires: March 2027</p>
+                                <p class="bright">Achievement: They are able to use the core toolset to clean, prepare,
+                                    blend, parse,
+                                    transform, and analyze data. Earners have demonstrated their ability to use the
+                                    tools to solve real-world analytics problems.</p>
+                                <a href="https://www.credly.com/badges/a419b5ef-2b7e-48ae-b6ca-a4e04a414c22/public_url"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Machine Learning Fundamentals Micro-Credential</h5>
+                                <p class="cert-issuer">Alteryx</p>
+                                <p class="cert-date">Issued: April 2024 • Expires: April 2026</p>
+                                <p class="bright">Earners of this micro-credential have an introductory understanding of
+                                    machine learning concepts. They can identify when to use machine learning
+                                    techniques,
+                                    how to prepare data for modeling, and the basics of machine learning model
+                                    evaluation
+                                    and interpretation.</p>
+                                <a href="https://www.credly.com/badges/94ecc5e1-d629-48f7-a3d4-d5ee04508f0c/public_url"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Alteryx Auto Insights Micro-Credential</h5>
+                                <p class="cert-issuer">Alteryx</p>
+                                <p class="cert-date">Issued: March 2025• Expires: March 2025</p>
+                                <p class="bright">Earners of this micro-credential have an intermediate
+                                    understanding of Alteryx Auto Insights. They can identify appropriate data for
+                                    analysis, create measures and breakdowns, and interpret and review insights.
+                                    They also understand how to share datasets and missions to facilitate
+                                    collaboration.</p>
+                                <a href="https://www.credly.com/badges/3a74b32c-427d-488f-9a1b-ec830882102f/public_url"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Alteryx Designer Cloud Core</h5>
+                                <p class="cert-issuer">Alteryx</p>
+                                <p class="cert-date">Issued: April 2025 • Expires: April 2027</p>
+                                <p class="bright">Achievement: They are able to validate their use of Designer Cloud to
+                                    solve
+                                    real-world analytics problems.</p>
+                                <a href="https://www.credly.com/badges/ec8c7eef-2238-4515-a715-d947b90f888d/public_url"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Exploring SAP Analytics Cloud - Record of Achievement</h5>
+                                <p class="cert-issuer">SAP</p>
+                                <p class="cert-date">Issued: December 2024 • Expires: December 2026</p>
+                                <p class="bright">This Record of Achievement validates that the candidate has
+                                    successfully completed
+                                    the Learning Journey "Exploring SAP Analytics Cloud". The earner is able to know the
+                                    basics around all areas of SAP Analytics Cloud.</p>
+                                <a href="https://www.credly.com/badges/6d714432-f69b-4e30-895c-f566b3ab761d/public_url"
+                                    class="btn btn-custom mt-3" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="ai">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Data Science</span>
+                                <h5 class="cert-title">Basic Proficiency in KNIME Analytics Platform</h5>
+                                <p class="cert-issuer">KNIME</p>
+                                <p class="cert-date">Issued: January 2024 • Expires: January 2026</p>
+                                <p class="bright">Earners of the "Basic Proficiency in KNIME Analytics Platform" badge
+                                    have passed the
+                                    L1 examination of KNIME Certification Program. Thereby they have demonstrated
+                                    knowledge of the following topics: General concepts of KNIME Analytics Platform,
+                                    Data access and export, Data cleaning and transformation, Data merging and
+                                    aggregation, Data visualization and reporting.</p>
+                                <a href="https://www.credly.com/badges/04475f5b-f858-4146-acbc-86b7df065e69/public_url"
+                                    class="btn btn-custom mt-3" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="cloud">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Cloud Computing</span>
+                                <h5 class="cert-title">Oracle Cloud Infrastructure 2025 Certified Foundations Associate
+                                </h5>
+                                <p class="cert-issuer">Oracle</p>
+                                <p class="cert-date">Issued: April 2025 • Expires: April 2027</p>
+                                <p class="bright">Understanding of basic cloud concepts, familiarity with core OCI
+                                    services including
+                                    Compute, Storage, Networking, Database, Developer, Analytics, AI, Observability and
+                                    Hybrid services, Ability to explain OCI security and identity model and compliance
+                                    structure</p>
+                                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=C4C14B0241F8527D987E5840891ADE7C392A25D880D2A260A67C3287C127ACA2"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Certification 6 -->
+                    <div class="col-md-6 col-lg-4 mb-4 cert-item" data-category="cloud">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <span class="cert-badge mb-2">Cloud Computing</span>
+                                <h5 class="cert-title">Oracle Fusion Cloud Applications ERP Certified Foundations
+                                    Associate</h5>
+                                <p class="cert-issuer">Oracle</p>
+                                <p class="cert-date">Issued: April 2025 • Expires: April 2025</p>
+                                <p class="bright">This credential certifies the candidate understands how data and
+                                    process flows
+                                    integrate within and across the various business process modules of Oracle Fusion
+                                    Cloud applications, as well as key metrics associated with the ERP OMBPs.</p>
+                                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=4C0FBD9C6E65A6D7E8EA62734F436C550941B1896996648311059A65D087CF0C"
+                                    target="_blank" class="btn btn-custom mt-3">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025, M K Koushik Iyer</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mk-koushik-iyer/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MK-Koushik-Iyer" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://ieeexplore.ieee.org/author/127922470142392" target="_blank"><i
+                                class="fab fa-google"></i></a>
+                        <a href="mailto:mkkoushik2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Add active class to current page nav link
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentLocation = location.href;
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            navLinks.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Simple page transition
+            const pageContent = document.querySelector('.page-content');
+            if (pageContent) {
+                pageContent.style.opacity = '0';
+                setTimeout(() => {
+                    pageContent.style.opacity = '1';
+                }, 50);
+            }
+
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const certItems = document.querySelectorAll('.cert-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Show/hide items based on filter
+                    certItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+Welcome to my Portfolio Website!!
+
+I’m M K Koushik Iyer, a third-year Computer Science and Engineering student specializing in cybersecurity. I’m passionate about Data Analytics, particularly in the finance domain, where I combine technical skills with a strong interest in financial systems. Alongside my academic pursuits, I’m deeply engaged in entrepreneurship, startups, and economics. The fast-paced world of startups excites me, and I’m driven to explore innovative solutions at the intersection of technology and business. My goal is to contribute meaningfully to both finance and entrepreneurship through creativity and strategic thinking.
